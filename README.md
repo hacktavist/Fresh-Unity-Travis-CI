@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/hacktavist/Fresh-Unity-Travis-CI.svg?branch=master)](https://travis-ci.org/hacktavist/Fresh-Unity-Travis-CI)
