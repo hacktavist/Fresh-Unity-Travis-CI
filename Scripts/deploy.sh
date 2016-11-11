@@ -4,12 +4,12 @@ project="testing-travis"
 
 
 
-mkdir $project
-mv $(pwd)/windows/$project.exe $project
-mv $(pwd)/windows/$project_Data $project
+mkdir testing-travis
+mv $(pwd)/windows/$project.exe testing-travis
+mv $(pwd)/windows/$project_Data testing-travis
 
 
-zip -r $project.zip $project
+zip -r testing-travis.zip testing-travis
 
 
 echo "Deploy to Itch"
@@ -18,7 +18,7 @@ chmod +x butler
 touch butler_creds
 echo -n $ITCH_API_KEY > butler_creds
 
-./butler push $project.zip hacktavist/testing-travisci-deployment:windows -i butler_creds
+./butler push testing-travis.zip hacktavist/testing-travisci-deployment:windows -i butler_creds
 
 echo "Cleaning"
 
